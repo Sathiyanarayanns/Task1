@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Task1</string>
+    <string name="depart">choose a degree</string>
+    <string-array name="departlist">
+        <item>CSC</item>
+        <item>ECE</item>
+        <item>CIVIL</item>
+        <item>IT</item>
+        <item>MECH</item>
+    </string-array>
+</resources>

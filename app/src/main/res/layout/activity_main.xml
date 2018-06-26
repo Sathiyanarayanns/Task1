@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.srirama.task1.MainActivity"
+    android:weightSum="1"
+    android:background="@drawable/book">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="0.05"
+            android:text="Name :"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/eteditname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.60" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvgender"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="Gender"
+        android:textSize="15dp" />
+        <RadioGroup
+            android:id="@+id/rg"
+            android:orientation="horizontal"
+            android:layout_width="381dp"
+            android:layout_height="84dp">
+
+            <RadioButton
+                android:id="@+id/rbfemale"
+                android:layout_width="90dp"
+                android:layout_height="57dp"
+                android:onClick="rbclick"
+                android:text="female" />
+
+            <RadioButton
+                android:id="@+id/rbmale"
+                android:layout_width="89dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="40dp"
+                android:onClick="rbclick"
+                android:text="male" />
+
+
+        </RadioGroup>
+    <TextView
+        android:id="@+id/tvdegree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="Degree:"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spindegree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/departlist"
+        android:prompt="@string/depart"/>
+
+    <CheckBox
+        android:id="@+id/cbjava"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:text="Java" />
+
+    <CheckBox
+        android:id="@+id/cbc"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="c" />
+
+    <CheckBox
+        android:id="@+id/cbcsharp"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="csharp" />
+
+    <CheckBox
+        android:id="@+id/cbandroid"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:text="Android" />
+
+    <Button
+        android:id="@+id/btnform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="check selected" />
+
+    <TextView
+        android:id="@+id/tvanswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.17"
+        android:text="answer" />
+
+    <TextView
+        android:id="@+id/tvans1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.17" />
+
+    <TextView
+        android:id="@+id/tvans2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16" />
+
+    <TextView
+        android:id="@+id/tvans3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+</LinearLayout>
